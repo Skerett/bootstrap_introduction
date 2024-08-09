@@ -1,0 +1,115 @@
+<!-- Time spent on this: 12h -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Set up your profile</title>
+    <style>
+        .square {
+            height: 12px;
+            width: 12px;
+            margin-left: 8px;
+            margin-right: 8px;
+            background-color:#D9D9D9;
+            display: inline-block;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 5%;">
+        <!-- Left side of the site -->
+        <div class="row">
+            <div class="col-md-5 mb-4">
+                <div class="row">
+                    <div class="col-12 col-md-11 order-2 order-md-1">
+                        <!-- progress bar -->
+                        <div class="progress-box mb-3">
+                            <div class="progress bg-white border" style="height: 15px;">
+                                <div class="progress-bar position-relative bg-primary" style="width:33%;">
+                                </div>
+                            </div>
+                        </div> <!-- progress-box end -->
+                    </div>
+                    <div class="col order-1 order-md-2">
+                        <div class="row mb-4">
+                            <h1 class="my-3 pt-4"><b>Set up your profile</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <img style="margin-top: 40%; padding-right: 15%;" class="mx-auto d-none d-md-block img-fluid" src="images/illustration_ profile settings.png">
+                </div>
+            </div>
+
+            <!-- Right side of the site -->
+            <div class="col-md-7 border rounded mb-4 p-4">
+                 <!-- Avatar -->
+                <img style="padding: 30px;" class="mb-4 avatar avatar-medium rounded-circle border img-fluid mx-auto d-block" src="images/camera.png">
+                 <!-- First, Last name -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 mb-4 ">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col-md-12 col-lg-6 mb-4 ">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <!-- Username -->
+                <div class="row">
+                    <div class="col-10 col-md-11 mb-5">
+                        <div class="g-4 input-group">
+                            <div class="input-group-prepend">
+                                <span style="border: none;"class="input-group-text bg-white pe-1 ps-0">https://onecalend.com/</span>
+                            </div>
+                            <input type="text" class="form-control rounded" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <div class="form-icon">
+                            <i data-feather="alert-circle" class="text-primary fea icon-sm icons d-block"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bio/work title -->
+                <div class="row">
+                    <div class="col mb-4">
+                        <textarea rows="7" type="text" class="form-control ps-4" placeholder="Bio/work title"></textarea>
+                    </div>
+                </div>
+                <!-- Dots -->
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center">
+                            <span class="square bg-primary rounded-circle"></span>
+                            <span class="square rounded-circle"></span>
+                            <span class="square rounded-circle"></span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="btn btn-pills btn-outline-primary">Previous step</a>
+                    </div>
+                    <div class="col text-end">
+                        <a href="availability.html" class="btn btn-pills btn-primary">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <script src="css/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

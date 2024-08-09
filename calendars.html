@@ -1,0 +1,143 @@
+<!-- Time spent on this: 4h -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Calendars</title>
+    <style>
+        .btn-check:checked + .btn, 
+        :not(.btn-check) + .btn:active, 
+        .btn:first-child:active, 
+        .btn.active, 
+        .btn.show {
+            color: #2F55D4;
+            background-color: white;
+            border-width: 2px;
+        }
+        .fea{
+            float: left;
+            margin-top: -3px;
+            margin-left: -5px;
+        }
+        .btn{
+            padding-top: 0.8rem;
+            padding-right: 1.08rem;
+            padding-bottom: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 5%;">
+        <!-- Left side of the site -->
+        <div class="row">
+            <div class="col-md-5 mb-4">
+                <div class="row">
+                    <div class="col-12 col-md-11 order-2 order-md-1">
+                        <!-- progress bar -->
+                        <div class="progress-box mb-3">
+                            <div class="progress bg-white border" style="height: 15px;">
+                                <div class="progress-bar position-relative bg-primary d-block" style="width:100%;">
+                                </div>
+                            </div>
+                        </div> <!-- progress-box end -->
+                    </div>
+                    <div class="col-9 order-1 order-md-2">
+                        <div class="row mb-4">
+                            <h1 class="my-3 pt-4"><b>Select calendars you want to use</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <img style="margin-top: 25%; padding-right: 15%;" class="mx-auto d-none d-md-block img-fluid" src="images/ilustration_ calendar select.png">
+                </div>
+            </div>
+            <!-- Right side of the site -->
+            <div class="col-md-7 border rounded mb-4 p-4">
+                <div class="row">
+                    <div class="col-10">
+                        <!-- Calednars -->
+                        <input type="checkbox" class="btn-check" id="email" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="email">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="ps-3">voojtechoravec@gmail.com</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="habits" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="habits">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">✅Habits</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="birth1" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="birth1">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="ps-3">🎂Birthdays</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="food" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="food">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">🍪Food</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="calend" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="calend">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="ps-3">📆1Calend</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="fp" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="fp">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">📚FP</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="birth2" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="birth2">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">🎂Birthdays</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="habits" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="habits">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">🚗Transport</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="habits" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="habits">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">🛒Brani.cz</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="habits" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="habits">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">💤Sleep</span>
+                        </label>
+                        <input type="checkbox" class="btn-check" id="habits" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded me-2" for="habits">
+                            <img src="images/Google Calendar.png" class="fea icon-m-md">
+                            <span class="p-3">České státní svátky</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div style="height: 15rem;" class="row align-items-end">
+                    <div class="col">
+                        <a href="availability.html" class="btn btn-pills btn-outline-primary">Previous step</a>
+                    </div>
+                    <div class="col text-end">
+                        <a href="#" class="btn btn-pills btn-primary">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <script src="css/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

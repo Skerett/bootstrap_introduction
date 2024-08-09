@@ -1,0 +1,189 @@
+<!-- Time spent on this: 8h -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <title>Availability</title>
+    <style>
+        .slider .noUi-connect {
+            background: #2F55D4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="margin-top: 5%;">
+        <div class="row">
+            <!-- Left side of the site -->
+            <div class="col-lg-5 col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-11 order-2 order-lg-1">
+                        <!-- progress bar -->
+                        <div class="progress-box mb-5">
+                            <div class="progress bg-transparent border" style="height: 15px;">
+                                <div class="progress-bar position-relative bg-primary" style="width:66%;">
+                                </div>
+                            </div>
+                        </div> <!-- progress-box end -->
+                    </div>
+                    
+                    <div class="col-12 col-lg-8 order-1 order-lg-2">
+                        <div class="row mb-4">
+                            <h1 class="my-3"><b>Set your availability for meetings</b></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <img style="margin-top: 20%; padding-right: 15%;" class="mx-auto img-fluid mb-3 d-none d-lg-block" src="images/ilustration.png">
+                </div>
+            </div>
+            <!-- Right side of the site -->
+            <div class="col-lg-7 col-sm-12 border rounded mb-4 py-4 px-4">
+                <div class="row">
+                    <!-- Sliders for each day -->
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Monday</label>
+                        <div class="ms-1 slider" id="slider-monday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-monday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Tuesday</label>
+                        <div class="ms-1 slider" id="slider-tuesday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-tuesday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Wednesday</label>
+                        <div class="ms-1 slider" id="slider-wednesday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-wednesday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Thursday</label>
+                        <div class="ms-1 slider" id="slider-thursday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-thursday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Friday</label>
+                        <div class="ms-1 slider" id="slider-friday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-friday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Saturday</label>
+                        <div class="ms-1 slider" id="slider-saturday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-saturday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <label class="form-label">Sunday</label>
+                        <div class="ms-1 slider" id="slider-sunday"></div>
+                    </div>
+                    <div class=" col-12 col-md-3">
+                        <div class="row mx-0">
+                            <input class="mt-4 m-auto mb-3 text-center form-control input-format" id="input-format-sunday">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <!-- Buttons -->
+                    <div class="col">
+                        <a href="profile.html" class="btn btn-pills btn-outline-primary">Previous step</a>
+                    </div>
+                    <div class="col text-end">
+                        <a href="calendars.html" class="btn btn-pills btn-primary">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <script src="css/feather.min.js"></script>
+    <script src="css/nouislider.js"></script>
+    <script>
+        feather.replace();
+
+        function createSlider(id, inputId) {
+            var slider = document.getElementById(id);
+            var inputFormat = document.getElementById(inputId);
+
+            noUiSlider.create(slider, {
+                start: [8, 16],
+                connect: true,
+                range: {
+                    "min": 1,
+                    "max": 24
+                },
+            });
+
+            function formatTime(value) {
+                var hours = Math.floor(value);
+                var minutes = Math.round((value - hours) * 60);
+                if (minutes < 10) minutes = '0' + minutes; // add leading zero if needed
+                return hours + ':' + minutes;
+            }
+
+            function parseTime(value) {
+                var parts = value.split(':');
+                return parseInt(parts[0]) + parseInt(parts[1]) / 60;
+            }
+
+            slider.noUiSlider.on("update", function (values) {
+                var formattedValues = values.map(formatTime);
+                inputFormat.value = formattedValues.join(' - ');
+            });
+
+            inputFormat.addEventListener("change", function () {
+                var values = this.value.split(' - ').map(parseTime);
+                slider.noUiSlider.set(values);
+            });
+        }
+
+        createSlider("slider-monday", "input-format-monday");
+        createSlider("slider-tuesday", "input-format-tuesday");
+        createSlider("slider-wednesday", "input-format-wednesday");
+        createSlider("slider-thursday", "input-format-thursday");
+        createSlider("slider-friday", "input-format-friday");
+        createSlider("slider-saturday", "input-format-saturday");
+        createSlider("slider-sunday", "input-format-sunday");
+    </script>
+</body>
+</html>
